@@ -19,7 +19,7 @@ export default function Home({ jackpots }) {
   )
 }
 
-export const getStaticProps = async () => {
+export const getServerSideProps = async () => {
   const jackpots = await getJackpotData(7)
   return {
     props: {
